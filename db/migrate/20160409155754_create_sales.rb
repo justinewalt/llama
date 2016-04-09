@@ -4,6 +4,7 @@ class CreateSales < ActiveRecord::Migration
       t.date :date
       t.float :price
       t.string :description
+      t.belongs_to :user
 
       t.timestamps null: false
     end

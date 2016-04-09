@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get 'salesmen/index'
+  get 'dashboard/index'
 
-  root 'home#index'
+  devise_for :users
+  root 'dashboard#index'
+
+
 end

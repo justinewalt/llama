@@ -4,6 +4,7 @@ class CreateInventories < ActiveRecord::Migration
       t.string :name
       t.float :price
       t.string :description
+      t.belongs_to :user
 
       t.timestamps null: false
     end
