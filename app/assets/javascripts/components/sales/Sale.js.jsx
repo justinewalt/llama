@@ -5,10 +5,13 @@ class Sale extends React.Component {
 
 	render() {
 		return(
-			<div className='col-xs-12'>
-				{this.props.date}
-				{this.props.description}
-				{this.props.price}
-			</div>)
+					<tr>
+						<td>{this.props.date}</td>
+						<td>{this.props.description}</td>
+						<td>{this.props.price}</td>
+						<td>
+							<button onClick={ () => this.props.delete(this.props.id)} className='btn btn-secondary'>Delete</button>
+						</td>
+					</tr>)
 	}
 }

@@ -7,7 +7,7 @@ class SalesController < ApplicationController
 	end
 
 	def create
-		@sale = Sale.new(sale_params)
+		sale = Sale.new(sale_params)
 		if sale.save
 			render json: sale
 		else 
